@@ -69,7 +69,7 @@ namespace GroupListViewDemo
                 ItemsPath = new PropertyPath("People")
             };
 
-            this.SetBinding(CollectionViewSource.SourceProperty, new Binding {Source = _source});
+            _dataSource.SetValue(CollectionViewSource.SourceProperty, new Binding {Source = _source});
         }
     }
 }
