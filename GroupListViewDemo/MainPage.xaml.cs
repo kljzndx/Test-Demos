@@ -66,9 +66,10 @@ namespace GroupListViewDemo
             _dataSource = new CollectionViewSource
             {
                 IsSourceGrouped = true,
-                Source = _source,
                 ItemsPath = new PropertyPath("People")
             };
+
+            this.SetBinding(CollectionViewSource.SourceProperty, new Binding {Source = _source});
         }
     }
 }
