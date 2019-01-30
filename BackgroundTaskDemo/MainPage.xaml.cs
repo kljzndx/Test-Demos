@@ -64,6 +64,11 @@ namespace BackgroundTaskDemo
 
         private async void ViewLog_Button_Click(object sender, RoutedEventArgs e)
         {
+            await Launcher.LaunchFolderAsync(ApplicationData.Current.LocalFolder);
+        }
+
+        private async void ViewOldLog_Button_Click(object sender, RoutedEventArgs e)
+        {
             await Launcher.LaunchFolderAsync(ApplicationData.Current.TemporaryFolder);
         }
     }

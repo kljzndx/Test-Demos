@@ -15,7 +15,8 @@
             </Style>
         </StackPanel.Resources>
         <Button x:Name="Start_Button" Content="Start task" Click="Start_Button_Click"/>
-
+        
         <Button x:Name="ViewLog_Button" Content="View log" Click="ViewLog_Button_Click"/>
+        <Button x:Name="ViewOldLog_Button" Content="View old log" Click="ViewOldLog_Button_Click"/>
     </StackPanel>
 </Page>
