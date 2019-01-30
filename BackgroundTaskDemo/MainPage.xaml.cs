@@ -54,6 +54,9 @@ namespace BackgroundTaskDemo
                 await dialog.ShowAsync();
                 return;
             }
+
+            // No matter how many minutes are set, the last is always 15 minutes to trigger
+            logger.Info("Set 30 minutes time trigger");
             builder.SetTrigger(new TimeTrigger(30, true));
             builder.Register();
             logger.Info("Task created");
