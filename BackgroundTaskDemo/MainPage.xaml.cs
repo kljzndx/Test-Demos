@@ -40,6 +40,7 @@ namespace BackgroundTaskDemo
             var task = BackgroundTaskRegistration.AllTasks.Values.FirstOrDefault(t => t.Name is App.TaskName);
             if (task != null)
             {
+                logger.Info("Task has been created");
                 var dialog = new MessageDialog("Task has been created");
                 await dialog.ShowAsync();
                 return;
