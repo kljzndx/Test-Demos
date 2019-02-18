@@ -8,7 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <StackPanel>
+        <TextBox x:Name="Url_TextBox" Header="URL Address"/>
 
-    </Grid>
+        <Button x:Name="StartDownload_Button" Content="Start download" Click="StartDownload_Button_OnClick"/>
+        <ProgressBar x:Name="Download_ProgressBar" Height="50" Maximum="100"/>
+        <TextBlock>
+            <Run Text="Received: "/>
+            <Run x:Name="Received_Run"/>
+            <Run Text="Receive total: "/>
+            <Run x:Name="ReceiveTotal_Run"/>
+        </TextBlock>
+    </StackPanel>
 </Page>
