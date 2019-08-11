@@ -33,7 +33,7 @@ namespace BlurBackgroundTest
 
         private void MainPage_OnLoaded(object sender, RoutedEventArgs e)
         {
-            if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 3))
+            if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 4))
             {
                 _blurBrush = new BackdropBlurBrush();
 
