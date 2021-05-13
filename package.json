@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "antd": "^4.15.5",
-    "bootstrap": "^5.0.0",
+    "bootstrap": "4.6.0",
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
     "react": "^17.0.2",
