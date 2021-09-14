@@ -1,5 +1,5 @@
 一个jsx文件里包含多个组件时会使自动刷新功能失效  
-Auto page reload is broken when jsx file contain multi-components
+Auto page reloading is broken when jsx file contain multi-components
 
 # ScreenShot
 
